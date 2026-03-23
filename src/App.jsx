@@ -17,13 +17,13 @@ const App = () => {
   const [playStatus,setPlayStatus] = useState(false)
 
 
-   useEffect(() => {
-     setInterval(() => {
-      setHeroCount((count) => {
-          return count=== 2? 0 : count+1 
-      })
-     },3000)
-   },[])
+useEffect(() => {
+  const interval = setInterval(() => {
+    setHeroCount((count) => (count === 2 ? 0 : count + 1));
+  }, 3000);
+
+  return () => clearInterval(interval);
+}, []);
 
   return (
     <div>
