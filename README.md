@@ -118,11 +118,6 @@ Working with media (images & video) in React
 
 Slide Navigation
 
-## Screenshots
- 
-### Desktop View
-![Home Page](img.png)
-
 ## Future Improvements
 
 Add smooth transition animations between slides
